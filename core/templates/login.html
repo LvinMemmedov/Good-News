@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+    <!-- Elements -->
+    <section class="section login-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <section class="section-login">
+                        <div id="login-modal" class="login">
+                            <div class="form-title">
+                                <h4>Login</h4>
+                                <div class="signup">
+                                    No account yet? <a href="#">Sign Up</a>
+                                </div>
+                            </div>
+                            <div class="login-by">
+                                <div class="log-face-w">
+                                    <a class="log-facebook" href="#">Login with Facebook</a>
+                                </div>
+                                <div class="log-twit-w">
+                                    <a class="log-twitter" href="#">Login with Twitter</a>
+                                </div>
+                            </div>
+                            <form id="loginform" name="loginform" method="post">
+                                <div class="email-wrap">
+                                    <label for="user-email">Your email address</label>
+                                    <input type="text" size="30" value="" class="input" id="user-email" name="log">
+                                </div>     
+                                <div class="pass-wrap">
+                                    <label for="user-pass">Password</label>
+                                    <input type="password" size="30" value="" class="input" id="user-pass" name="password">
+                                </div>
+
+                                <div class="option-login">
+                                    <div class="remember">
+                                        <input type="checkbox" name="check3" id="check3" class="css-checkbox" checked="checked"/><label for="check3" class="css-label">Remember me</label>
+                                    </div>
+                                    <div class="forgot">
+                                        <a href="#">I forgot my password</a>
+                                    </div>
+                                </div>
+
+                                <div class="submit-login">
+                                    <input type="submit" value="Log In" class="submit" id="submit" name="submit">
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                    <section class="section-login">
+                        <div id="signup-modal">
+                            <div class="form-title">
+                                <h4>Sign Up</h4>
+                                <div class="signup">
+                                    Already a member? <a href="#">Login</a>
+                                </div>
+                            </div>
+                            <div class="login-by">
+                                <div class="log-face-w">
+                                    <a class="log-facebook" href="#">Login with Facebook</a>
+                                </div>
+                                <div class="log-twit-w">
+                                    <a class="log-twitter" href="#">Login with Twitter</a>
+                                </div>
+                            </div>
+                            <form id="signupform" name="signupform" method="post">
+                                <div class="name-wrap">
+                                    <label for="user-name">Name</label>
+                                    <input type="text" size="30" value="" class="input" id="user-name" name="name">
+                                </div> 
+                                <div class="email-wrap">
+                                    <label for="user-email">Your email address</label>
+                                    <input type="text" size="30" value="" class="input" id="user-email2" name="log">
+                                </div>     
+                                <div class="pass-wrap">
+                                    <label for="user-pass">Password</label>
+                                    <input type="password" size="30" value="" class="input" id="user-pass2" name="password">
+                                </div>
+
+                                <div class="option-login">
+                                    <div class="remember">
+                                        <input type="checkbox" name="check4" id="check4" class="css-checkbox" checked="checked"/><label for="check4" class="css-label">Remember me</label>
+                                    </div>
+                                    <div class="forgot">
+                                        <a href="#">I forgot my password</a>
+                                    </div>
+                                </div>
+
+                                <div class="submit-login">
+                                    <input type="submit" value="Log In" class="submit" id="submit2" name="submit">
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div><!-- /.col-md-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    {% endblock %}
